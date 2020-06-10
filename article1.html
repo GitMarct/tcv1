@@ -1,0 +1,236 @@
+  
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="This is a website made by Marc Vicente. It's currently used as a prototype website for Tri-City Voice.">
+    <title>Tri-City Voice</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #aaf4a9;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #53ad52;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #b8b8b8;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tri-City Voice</h1>
+  <p>Accurate, Fair, Honest</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About us</a>
+  <a href="#">Advertising</a>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Archive</a>
+    <div class="dropdown-content">
+      <a href="#">Local</a>
+      <a href="#">Sports</a>
+      <a href="#">Home & Gardening</a>
+    </div>
+  </li>
+</div>
+<!--Above is the header. Only make changes when everything else changes.-->
+<div class="row">
+  <div class="side">
+    <h2>Ignore this part for now</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>Local libraries' stand against global pandemic</h2>
+    <h5>By Marc Vicente, May 26, 2020</h5>
+    <img src="img/DSC_0797.JPG" alt="Library">
+    <!--style="height:200px;" was the old preset.-->
+    <p>With shelter-in-place orders being extended, it remains uncertain when organizations will resume normal operations, and businesses and public facilities are finding ways to adapt.</p>
+    <p>Libraries have undergone perhaps the most drastic of changes during this pandemic season. They house a wide variety of books that circulate through more than one person through checkout. However, because the virus spreads through contact with people and other surfaces, checking out new physical books has been postponed ever since quarantine protocols were initiated to reduce the spread of the virus. In addition, many libraries in the Bay Area have extended the deadline of checked out media so that patrons can return them when the pandemic dies down. Multiple events involving the libraries have also been postponed to maintain the safety of library patrons.</p>
+    <p>Sometimes, libraries can serve as places for refuge for when disasters occur. Fremont Main Library Division Director Brian Edwards says,“A couple years ago, when we had fires, we had clean air circulating through the library so we had people coming inside for space to breathe and a cool place because they didn't have that at home. With this virus, we have to close our doors, which is hard for a lot of people and their mental health. This pandemic is difficult for a lot of people at home, with a lot of necessary services closed down. Some people have no access to internet, music or streaming services, so they are waiting for us to reopen soon.”</p>
+    <p>While a large majority of their physical books remain on shelves, libraries continue to help their communities through their websites, by providing registration for virtual library cards, or eCards that allow free access to their online archive. Some libraries, like the Hayward Public Library, also offered Chromebooks to some people via checkout before they closed down. Hayward Public Library Director of Library Services Jayanti Addleman states that “the transition to digital services was not as difficult as one would expect, since [libraries] were equipped with online services long before the spread of COVID-19.”</p>
+    <p>In addition to eCards, local libraries promote other services, as well as events hosted by their librarians. Tutoring services for students, moral support lines for various demographics, and Census assistance are some of the services offered by multiple Bay Area libraries. Some offer their own unique events, such as Hayward Public Library’s virtual storytimes for children, and Union City Library’s Twitch streaming service to play games with their patrons.</p>
+    <p>On top of adapting their current services, libraries currently cooperate with the Center of Disease Control (CDC), the Institute of Museum and Library Services (IMLS) and the State of California to continue creating innovative ways to reconfigure their arrangements to decrease the spread of COVID-19 among patrons when they reopen. Since libraries can only distribute their eBooks a finite number of times while under digital rights laws, like the Digital Millennium Copyright Act, Edwards says that libraries have to constantly update, organize and expand their online databases to maintain and provide more content for patrons to enjoy, especially since the use of eLibraries has skyrocketed in the past two months. Seating and computer layouts among multiple libraries will be rearranged to observe social distancing procedures, with Addleman stating that the Hayward Public Library will start adding plexiglass sneeze guards to their computer stations. Additionally, plans to initiate contactless pickup of books are said to be started around June. However, before libraries open up again to implement such changes, the CDC and IMLS still have yet to discover the best possible courses of action to ensure that everyone can remain safe from the ever-spreading COVID-19 virus.</p>
+	</br>
+	<h5>Hayward Public Library</h5>
+<p>Digital Lending</br>
+Ecards</br>
+Virtual classes/meetups</br>
+Tutoring</br>
+Census Information</br>
+Virtual Storytime</br>
+(510) 293-8685</br>
+<a href="https://www.hayward-ca.gov/public-library">https://www.hayward-ca.gov/public-library</a></p>
+</br>
+<h5>Fremont Main Library</h5>
+<p>Digital Lending</br>
+Ecards</br>
+Virtual classes/meetups</br>
+Tutoring</br>
+Homeless Services</br>
+(510) 745-1400</br>
+<a href="https://guides.aclibrary.org/fremont">https://guides.aclibrary.org/fremont</a></p>
+
+<h5>Milpitas Library</h5>
+<p>Digital Lending </br>
+Ecards</br>
+Tutoring</br>
+Virtual classes/meetups</br>
+Census Information</br>
+Passport Services</br>
+(408) 262-1171</br>
+<a href="https://sccld.org/locations/MI/">https://sccld.org/locations/MI/</a></p>
+  </div>
+</div>
+<div class="footer">
+
+       <h4><script type="text/javascript">
+var now = new Date();
+
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+
+function fourdigits(number)	{
+	return (number < 1000) ? number + 1900 : number;
+								}
+today = 
+		 days[now.getDay()] + ", " +
+         months[now.getMonth()] + " " +
+         date + ", " +
+         (fourdigits(now.getYear())) ;
+
+document.write(today);
+</script><h4>
+ <h4> &copy; 2020 <a href="https://gitmarct.github.io/art3870s17/" target="_blank"> Marc Vicente</a> </h4>
+   <h4><a href="#">Contact Us</a> &nbsp;<a href="#">Privacy Policy</a></h4>
+</div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

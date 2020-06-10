@@ -1,0 +1,210 @@
+  
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="This is a website made by Marc Vicente. It's currently used as a prototype website for Tri-City Voice.">
+    <title>Tri-City Voice</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #aaf4a9;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #53ad52;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #b8b8b8;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tri-City Voice</h1>
+  <p>Accurate, Fair, Honest</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About us</a>
+  <a href="#">Advertising</a>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Archive</a>
+    <div class="dropdown-content">
+      <a href="#">Local</a>
+      <a href="#">Sports</a>
+      <a href="#">Home & Gardening</a>
+    </div>
+  </li>
+</div>
+<!--Above is the header. Only make changes when everything else changes.-->
+<div class="row">
+  <div class="side">
+    <h2>Ignore this part for now.</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+   <div class="et_pb_text_inner"><p><span style="color: #000000;">Through a blend of insightful and authoritative coverage of local news, art, culture, sports and entertainment, What’s Happening, Inc.’s weekly Tri-City Voice newspaper has become an essential resource for residents and visitors alike. This unique newspaper uses a fresh and innovative format that is eagerly anticipated and widely read by all segments of the highly diverse population of the southeast San Francisco Bay Area.</span></p>
+<p><span style="color: #000000;">In operation since 2002, Tri-City Voice, independent and locally owned, has grown to become the standard for local in-depth reporting. Serving a population of over 500,000 people, Tri-City Voice strives to promote an understanding, exploration and celebration of the area’s rich heritage.</span></p>
+<p><span style="color: #000000;">Whether your target is demographic or geographic, Tri-City Voice offers a variety of advertising solutions to achieve your marketing goals. Active advocacy within the local communities served assures that articles are timely and oriented toward local issues and interests. Coverage includes the cities and surrounding areas of Castro Valley, Hayward, San Leandro, San Lorenzo, Union City, Fremont, Newark, Milpitas and Sunol.</span></p>
+<p><span style="color: #000000;">Some basic facts about Tri-City Voice newspaper:</span></p>
+<ul>
+<li><span style="color: #000000;"><strong><em>Tri-City Voice is an independent newspaper</em></strong>. In this time of consolidated newspaper ownership, removed from the area served, readers are looking for information that closely reflects their community. Many newspapers offer inflated and misleading readership figures to offset declining subscriptions. <strong><em>Tri-City Voice is created, distributed and read by local people</em></strong><em>.</em> A loyal audience is our goal, not an artificial manipulation of numbers. Local advertisers, those that know the community, are the base of support for Tri-City Voice.&nbsp;</span></li>
+</ul>
+<ul>
+<li><span style="color: #000000;"><strong><em>Tri-City Voice uses a unique system of distribution</em></strong> through paid subscriptions and free distribution that guarantees advertising results. Employees of Tri-City Voice distribute 25,000 copies each week to thousands of locations throughout the community. Locations include businesses, libraries, restaurants, hotels, medical centers and offices, schools and other high traffic areas. Subscriptions are delivered directly to homes or mailed to those who prefer a reserved copy. One of the most common comments about Tri-City Voice from citizens and visitors is, “I see it everywhere.”</span></li>
+</ul>
+<p><span style="color: #000000;"><strong><em>The entire content of Tri-City Voice is available on its website and mobile app: <span style="color: #000080;"><a style="color: #000080;" href="https://www.tricityvoice.com/">www.tricityvoice.com</a></span> and TCV News.</em></strong> Each page is displayed as printed including advertisements. All prior copies are archived for retrieval at no cost to advertisers or visitors Our website receives over 1,800 impressions per day. Rates are reasonable and designed to allow local advertisers to participate. Advertisers have the option of creating links to special advertising pages at our website and/or proprietary websites.</span></p>
+<p><span style="color: #000000;">Tri-City Voice believes that long-term relationships are the key component to success. <strong><em>We do not engage in deceptive pricing or contracts.</em></strong> There are no hidden fees. Design services are available to assist advertisers, usually without charge.</span></p>
+<p><span style="color: #000000;">Over 5,000 satisfied advertisers have used Tri-City Voice to communicate with a vital, fast-growing area of the San Francisco Bay. Distribution, readership and advertising are increasing rapidly confirming the value of using Tri-City Voice as a preferred media for contact with the southeast San Francisco Bay Area.</span></p>
+<p><span style="color: #000000;">Call: <strong><span style="color: #000080;">(510) 494-1999</span></strong>, email: <strong><span style="color: #000080;"><a style="color: #000080;" href="mailto:tricityvoice@aol.com">tricityvoice@aol.com</a> </span></strong>or fax <strong><span style="color: #000080;">(510) 796-2462</span></strong> today to find out how Tri-City Voice can help your business thrive.</span></p></div></div>
+</div>
+<div class="footer">
+
+       <h4><script type="text/javascript">
+var now = new Date();
+
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+
+function fourdigits(number)	{
+	return (number < 1000) ? number + 1900 : number;
+								}
+today = 
+		 days[now.getDay()] + ", " +
+         months[now.getMonth()] + " " +
+         date + ", " +
+         (fourdigits(now.getYear())) ;
+
+document.write(today);
+</script><h4>
+ <h4> &copy; 2020 <a href="https://gitmarct.github.io/art3870s17/" target="_blank"> Marc Vicente</a> </h4>
+   <h4><a href="#">Contact Us</a> &nbsp;<a href="#">Privacy Policy</a></h4>
+</div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

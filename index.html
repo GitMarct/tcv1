@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-<body>
-<!-- From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_example_website -->
 <style>
 * {
   box-sizing: border-box;
@@ -29,7 +27,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #1abc9c;
+  background: #aaf4a9;
   color: white;
 }
 
@@ -41,7 +39,7 @@ body {
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #53ad52;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -65,7 +63,7 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #b8b8b8;
   color: black;
 }
 
@@ -129,57 +127,58 @@ body {
   }
 }
 </style>
-   <div class="top-nav-wrapper">
+</head>
+<body>
 
-  <nav class="title-bar">
-<!--<img src="img/VF_logo.png" class="put a class from CSS" alt="put a caption here for if the picture does not show."> for images in the code -->
-   <a href="index.html"><img src="img/practice title.png" class="awesome" alt="put a caption here for if the picture does not show."></a>
+<div class="header">
+  <h1>Tri-City Voice</h1>
+  <p>Accurate, Fair, Honest</p>
+</div>
+
 <div class="navbar">
-  <a href="#" class="active">Tri-City Voice</a>
-  <a href="#">About us</a>
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About us</a>
   <a href="#">Advertising</a>
    <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Archive</a>
     <div class="dropdown-content">
-      <a href="general-f.html">Local</a>
-      <a href="grievance-f.html">Sports</a>
-      <a href="provider-f.html">Home & Gardening</a>
+      <a href="#">Local</a>
+      <a href="#">Sports</a>
+      <a href="#">Home & Gardening</a>
     </div>
   </li>
 </div>
-<!-- Comment for now
-<ul>
-  <li><a href="offices.html">About Us</a></li>
-  <li><a href="services.html">Advertising</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Archive</a>
-    <div class="dropdown-content">
-      <a href="general-f.html">Local</a>
-      <a href="grievance-f.html">Sports</a>
-      <a href="provider-f.html">Home & Gardening</a>
-    </div>
-  </li>
-</ul> -->
- </nav>
- </div>
-<!--Don't edit anything above this line... for the most part. If you do plan on making changes, however, please have Marc check over them before finalizing the page.-->
-     
-      <h1 class="title-heading">Welcome to Tri-City Voice!</h1>
-      <img src="img/indexcover.jpg" alt="Welcome to Tri-City Voice!">
-    <p class="bigger">Services</p>
-    <p>We provide comprehensive, computer assisted eye exams, which include the screening of glaucoma and cataracts, the diagnosis and the treatment of ocular disease and injury. Our doctors are trained to provide complete contact lens services including astigmatic and bifocal contact lenses. Also ask our doctors about co-management for laser and cataract surgeries. Our friendly staff will also assist you in frame styling to complement your lifestyle. Outside prescriptions are always welcome.</p>
-    <p class="bigger">Types of Payment Accepted</p>
-    <p>We accept cash, personal checks, American Express&reg;, MasterCard&reg;, Visa&reg;, and Discover&reg;.<br>
-      </p>
-    <p class="bigger">Facilities and Equipment</p>
-        <p>We have a large, modern practice with state-of-the-art diagnostic equipment. We have an in-office Laboratory, so we are able to provide one-hour service on most prescriptions. We carry a large selection of frames - over 2000 designer frames including Calvin Klein, Silhouette, Chanel, Fendi, Giorgio Armani, Christian Dior, Oakley, Ray Ban, Maui Jim, Marchon, DKNY, Nautica, Kazuo Kawasaki, Accuflex and many more.<br>
-      </p>
-    <p class="bigger">Languages Spoken</p>
-      <p>Our staff speaks English, Chinese, Spanish, Vietnamese, and Filipino.</p>
+<!--Above is the header. Only make changes when everything else changes.-->
+<div class="row">
+  <div class="side">
+    <h2>Ignore this part for now.</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2><a href="article1.html"> Local libraries' stand against global pandemic</a></h2>
+    <h5>By Marc Vicente, May 26, 2020</h5>
+    <img src="img/DSC_0766.JPG" alt="Library">
+    <!--style="height:200px;" was the old preset.-->
+    <p>With shelter-in-place orders being extended, it remains uncertain when organizations will resume normal operations, and businesses and public facilities are finding ways to adapt.</p>
+    <a href="article1.html">Read more...</a>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+<!--below is the footer. Only make changes when everything else changes.-->
+<div class="footer">
 
-
-<!--Don't edit anything below this line... for the most part. If you do plan on making changes, however, please have Marc check over them before finalizing the page.-->
-       <footer>
        <h4><script type="text/javascript">
 var now = new Date();
 
@@ -201,10 +200,8 @@ today =
 document.write(today);
 </script><h4>
  <h4> &copy; 2020 <a href="https://gitmarct.github.io/art3870s17/" target="_blank"> Marc Vicente</a> </h4>
-   <h4><a href="contact.html">Contact Us</a> &nbsp;<a href="privacypolicy.html">Privacy Policy</a></h4>
- <!-- This is a temporary footer. If this website is to be actually published through, we're gonna have to remove this. -->
-</footer>
-
+   <h4><a href="#">Contact Us</a> &nbsp;<a href="#">Privacy Policy</a></h4>
+</div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
