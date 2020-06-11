@@ -100,26 +100,37 @@ font-size: 300%;
 .gutter {
     background-color: #FFFFFF;
  }
-
+/*
 script {
-text-align:center;
+text-align: right;
 position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
+} */
 
 /** CSS for dropdown NAV **/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e6ffe6;
+}
+
 li {
     float: left;
 }
-
+.li a, .active {
+  background-color: #666;
+  color: white;
+}
 li a, .dropbtn {
     display: inline-block;
     color: grey;
     text-align: center;
-    padding: 1px 24px 0px 1px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -134,7 +145,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ddd;
+    background-color: #e6ffe6;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -150,7 +161,6 @@ li.dropdown {
 
 .dropdown-content a:hover {
   color: #839FFF;
-  text-decoration:none;
 }
 
 .dropdown:hover .dropdown-content {

@@ -27,8 +27,10 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #aaf4a9;
-  color: white;
+  background: url(img/top.jpg);
+   background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
 }
 
 /* Increase the font size of the heading */
@@ -39,7 +41,7 @@ body {
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
   overflow: hidden;
-  background-color: #53ad52;
+  background-color: #e6ffe6;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -49,21 +51,15 @@ body {
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: #006b00;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
 
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #b8b8b8;
+  background-color: #7aff7a;
   color: black;
 }
 
@@ -131,55 +127,7 @@ body {
 <body>
 
 <div class="header">
-  <h1>Tri-City Voice</h1>
-  <p>Accurate, Fair, Honest</p>
-</div>
-
-<div class="navbar">
-  <a href="index.html" class="active">Home</a>
-  <a href="about.html">About us</a>
-  <a href="#">Advertising</a>
-   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Archive</a>
-    <div class="dropdown-content">
-      <a href="#">Local</a>
-      <a href="#">Sports</a>
-      <a href="#">Home & Gardening</a>
-    </div>
-  </li>
-</div>
-<!--Above is the header. Only make changes when everything else changes.-->
-<div class="row">
-  <div class="side">
-    <h2>Ignore this part for now.</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  <div class="main">
-    <h2><a href="article1.html"> Local libraries' stand against global pandemic</a></h2>
-    <h5>By Marc Vicente, May 26, 2020</h5>
-    <img src="img/DSC_0766.JPG" alt="Library">
-    <!--style="height:200px;" was the old preset.-->
-    <p>With shelter-in-place orders being extended, it remains uncertain when organizations will resume normal operations, and businesses and public facilities are finding ways to adapt.</p>
-    <a href="article1.html">Read more...</a>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  </div>
-</div>
-<!--below is the footer. Only make changes when everything else changes.-->
-<div class="footer">
-
-       <h4><script type="text/javascript">
+<script type="text/javascript">
 var now = new Date();
 
 var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
@@ -198,7 +146,58 @@ today =
          (fourdigits(now.getYear())) ;
 
 document.write(today);
-</script><h4>
+</script>
+</div>
+
+<!--<div class="navbar">-->
+  <ul>
+  <li><a href="index.html" class="active">Home</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">News</a>
+    <div class="dropdown-content">
+      <a href="#">Local</a>
+      <a href="#">Sports</a>
+      <a href="#">Home & Gardening</a>
+    </div>
+  </li>
+  <li><a href="about.html">About us</a></li>
+  <li><a href="#">Advertising</a></li>
+  </ul>
+</div>
+<!--Above is the header. Only make changes when everything else changes.-->
+<div class="row">
+
+  <div class="main">
+    <h2> Local libraries' stand against global pandemic</h2>
+    <h5>By Marc Vicente, May 26, 2020</h5>
+    <img src="img/DSC_0766.JPG" alt="Library">
+    <p>With shelter-in-place orders being extended, it remains uncertain when organizations will resume normal operations, and businesses and public facilities are finding ways to adapt.</p>
+    <a href="article1.html">Read more...</a>
+    <br><br><br>
+    <h2>Newspaper company starts using WordPress</h2>
+    <h5>By Marc Vicente, Jun 10, 2020</h5>
+    <img src="img/screenshot1.jpg" alt="Blueprint">
+    <p>Even though the old Tri-City Voice website was in a similar format to this one, it got replaced when the new method of distributing news was created in 2019.</p>
+    <a href="#">Read more...</a>
+    
+  </div>
+  <!--       Only make changes below this comment when everything else changes.            -->
+   <div class="side">
+    <h2>Calendar</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Calendar</div>
+    <p><b>June 10</b> - Office Meeting on Website</p>
+    <p><b>June 17</b> - Online Meeting via Zoom</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+</div>
+
+<div class="footer">
+
  <h4> &copy; 2020 <a href="https://gitmarct.github.io/art3870s17/" target="_blank"> Marc Vicente</a> </h4>
    <h4><a href="#">Contact Us</a> &nbsp;<a href="#">Privacy Policy</a></h4>
 </div>
